@@ -1,0 +1,181 @@
+/* =========================================================
+   PREMIUM MODERN GLASS UI – CLEAN, MINIMAL, SMOOTH
+   ========================================================= */
+
+/* ---------- THEME ---------- */
+:root {
+  --primary: #00adb5;
+  --primary-dark: #00949c;
+  --bg-light: #eef1f4;
+  --white: #ffffff;
+  --glass-white: rgba(255, 255, 255, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.22);
+  --dark: #1e1e1e;
+  --gray: #6d6d6d;
+
+  --radius: 14px;
+  --shadow: 0 6px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- GLOBAL ---------- */
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg-light);
+  color: var(--dark);
+}
+
+/* ---------- SECTION HEADING ---------- */
+.gradient-text {
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, var(--primary), var(--dark));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* =========================================================
+   PRODUCT CARDS — GLASS EFFECT + MODERN DESIGN
+   ========================================================= */
+.modern-card {
+  background: var(--glass-white);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.modern-card img {
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255,255,255,0.35);
+}
+
+.modern-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* Action Buttons */
+.btn-sm {
+  border-radius: 6px;
+  padding: 4px 10px;
+}
+
+/* =========================================================
+   TOP CONTROL BAR (SEARCH, SORT, VIEW)
+   ========================================================= */
+.top-controls input,
+.top-controls select,
+.top-controls button {
+  border-radius: 10px !important;
+  box-shadow: var(--shadow);
+  border: none !important;
+}
+
+.top-controls .btn-outline-primary {
+  box-shadow: none;
+}
+
+/* =========================================================
+   TABLE DESIGN – PREMIUM CLEAN GLASS TABLE
+   ========================================================= */
+.table-responsive-lg {
+  overflow-x: auto;
+  background: var(--glass-white);
+  backdrop-filter: blur(12px);
+  padding: 15px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+table {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: rgba(255,255,255,0.75);
+}
+
+.table th {
+  background: var(--primary);
+  color: var(--white);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table td,
+.table th {
+  white-space: nowrap;
+  padding: 14px 18px;
+  vertical-align: middle;
+}
+
+/* Row hover effect */
+.table tbody tr:hover {
+  background: rgba(0, 173, 181, 0.08);
+  transition: 0.2s;
+}
+
+/* =========================================================
+   MODAL FORM — CLEAN WHITE UI
+   ========================================================= */
+.modal-content {
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow);
+  padding: 10px;
+}
+
+.modal-body input,
+.modal-body textarea {
+  border-radius: 8px !important;
+  border: 1px solid #ddd !important;
+}
+
+/* =========================================================
+   MOBILE RESPONSIVE FIX
+   ========================================================= */
+@media (max-width: 575px) {
+  .top-controls {
+    flex-direction: column !important;
+    width: 100%;
+  }
+
+  .top-controls * {
+    width: 100% !important;
+  }
+
+  .modern-card img {
+    height: 180px;
+  }
+}
