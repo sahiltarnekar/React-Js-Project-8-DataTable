@@ -3,7 +3,8 @@ import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";
 import Swal from 'sweetalert2';
-
+import Header from "../Component/Header";
+import Footer from "../Component/Footer";
 
 const ProductForm = () => {
   const { id } = useParams();
@@ -59,7 +60,8 @@ const ProductForm = () => {
   
   return (
     <>
-
+      <Header />
+      
       <div className="col-lg-6 m-auto mt-5 shadow p-5 rounded-3 modern-form glass-effect">
         <h1 className="text-capitalize text-center mb-4 gradient-text">{id ? 'Edit Product' : 'Add Products'}</h1>
         <form action="" onSubmit={handleSubmit(addData)}>
@@ -137,7 +139,7 @@ const ProductForm = () => {
           )}
         </form>
       </div>
-
+          <Footer />
     </>
   );
 };
