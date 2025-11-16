@@ -271,7 +271,7 @@ const Home = () => {
         {view === "table" && (
           <div className="table-responsive">
             <table className="table table-bordered table-hover align-middle">
-              <thead className="table-dark sticky-top">
+              <thead className="table-dark ">
                 <tr>
                   <th width="5%">#</th>
                   <th width="15%">Image</th>
